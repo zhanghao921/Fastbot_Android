@@ -36,10 +36,10 @@
 
 
 ### shell运行
-* 添加限定词，可提升模型， `aapt2` 可根据本机环境替换为 `aapt`，如果提示不可用，需要添加到 `PATH` 环境变量中， 示例具体路径为 ``` ${ANDROID_HOME}/build-tools/28.0.2/aapt2```
+* 添加限定词，可提升模型， `aapt2` 可根据本机环境替换为 `aapt`，如果提示不可用，需要添加到 `PATH` 环境变量中， 示例具体路径为 ``` ${ANDROID_HOME}/build-tools/28.0.2```
 
     ```shell
-    aapt2 dump  --values strings  [install_package_path.apk] > max.valid.strings
+    aapt2 dump  --values strings  [install_package_path.apk] > max.valid.strings     （提示没有--values命令，应该删除）
     adb push max.valid.strings /sdcard 
     ```
 * 启动 Fastbot
