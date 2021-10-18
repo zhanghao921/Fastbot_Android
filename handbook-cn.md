@@ -41,7 +41,7 @@
     ```shell
     aapt2 dump  strings  [install_package_path.apk] > max.valid.strings     
     （原文是aapt2 dump  --values strings  [install_package_path.apk] > max.valid.strings ；实操中    提示没有--values命令，应该删除）
-    （执行新的测试包，原先的sdcard下的max.valid.strings删除，重新导入）
+    （执行新的测试包，重新导入，原先的sdcard下的max.valid.strings会被覆盖）
     adb push max.valid.strings /sdcard 
     ```
 * 启动 Fastbot
