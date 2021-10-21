@@ -30,8 +30,8 @@
 * 支持 Android 5，6，7，8，9，10，11真机及模拟器
 * 将 `framework.jar fastbot-thirdpart.jar monkeyq.jar` push 到手机上某个目录中，建议/sdcard，push `libs/* ` 到 `/data/local/tmp/`
     ```shell
-    adb push *.jar /sdcard
-    adb push libs/* /data/local/tmp/
+    adb push *.jar /sdcard (用这个命令adb push framework.jar fastbot-thirdpart.jar monkeyq.jar /sdcard)
+    adb push libs/* /data/local/tmp/  (用这个命令 adb push libs/. /data/local/tmp/)
     ```
 
 
